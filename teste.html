@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venda de Celulares</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Venda de Celulares</h1>
+  </header>
+  <div class="container">
+    <div class="cellphone" id="iphone11">
+      <img src="https://via.placeholder.com/300" alt="iPhone 11">
+      <div class="info">
+        <h2>iPhone 11</h2>
+        <p>Preço: R$3.999,00</p>
+        <p>Cor: Preto</p>
+        <p>Armazenamento: 128GB</p>
+        <p>Avaliação: ★★★★★</p>
+        <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit leo eget nisl scelerisque, vitae fringilla quam suscipit.</p>
+        <button onclick="comprar('iPhone 11')">Comprar</button>
+      </div>
+    </div>
+    <div class="cellphone" id="galaxyS20">
+      <img src="https://via.placeholder.com/300" alt="Galaxy S20">
+      <div class="info">
+        <h2>Galaxy S20</h2>
+        <p>Preço: R$3.499,00</p>
+        <p>Cor: Azul</p>
+        <p>Armazenamento: 256GB</p>
+        <p>Avaliação: ★★★★☆</p>
+        <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit leo eget nisl scelerisque, vitae fringilla quam suscipit.</p>
+        <button onclick="comprar('Galaxy S20')">Comprar</button>
+      </div>
+    </div>
+    <div class="cellphone" id="pixel4a">
+      <img src="https://via.placeholder.com/300" alt="Pixel 4a">
+      <div class="info">
+        <h2>Pixel 4a</h2>
+        <p>Preço: R$2.199,00</p>
+        <p>Cor: Branco</p>
+        <p>Armazenamento: 64GB</p>
+        <p>Avaliação: ★★★★☆</p>
+        <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit leo eget nisl scelerisque, vitae fringilla quam suscipit.</p>
+        <button onclick="comprar('Pixel 4a')">Comprar</button>
+      </div>
+    </div>
+  </div>
+  <div id="cart" onclick="mostrarCarrinho()">Carrinho (0)</div>
+  <div id="carrinho" style="display:none;">
+    <h2>Seu Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <button onclick="limparCarrinho()">Limpar Carrinho</button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
